@@ -15,7 +15,7 @@ function App() {
     sendMessage,
     sendTyping,
     sendStopTyping,
-  } = useWebSocket('https://advanced-web-messenger.onrender.com');
+  } = useWebSocket('ws://localhost:8080');
 
   const handleLogin = (name: string) => {
     setUsername(name);
